@@ -1,7 +1,7 @@
 
 
 
-
+console.log("Javascript is being used")
 
 const weatherinfo=document.querySelector('form')
 const search=document.querySelector('input')
