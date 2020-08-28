@@ -7,6 +7,10 @@ const forecast=require('../forecast')
 
 
 const app=express()
+const port=process.env.PORT || 3000
+
+
+
 const DirectoryPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../templating/views')
 const PartailHBS=path.join(__dirname,'../templating/partial')
@@ -93,7 +97,7 @@ app.get('/weather',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
-    console.log("Server is on port 3000")
+app.listen(port,()=>{
+    console.log("Server is on port "+ port)
 })//start server
 
